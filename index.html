@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es" ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>Polaroid Effect</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <!-- Load the libraries -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="lib/kinectjs/kinetic-v4.3.3.min.js"></script>
+</head>
+<body>
+	<div class="navbar">
+	  <div class="navbar-inner">
+		<a class="brand" href="#">Polaroid Effect</a>
+		<ul class="nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="http://www.dekuwebs.com">Dekuwebs</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div class="hero-unit">
+	  <h1>Polaroid Effect <small>from Dekuwebs</small></h1>
+	  <p>HTML5 App for applying the "Polaroid" effect to your pictures</p>
+	  <p>
+		<a class="btn btn-primary btn-large" href="https://github.com/bommox/polaroid">
+		  GitHub
+		</a>
+	  </p>
+	</div>
+	<div class="container-fluid">
+	  <div class="row-fluid">
+		<div class="span4">
+
+		</div>
+		<div class="span8">
+			<h2>Upload your picture <small>and poladoid it!</small></h2>
+			<div id="canvas-container"></div>
+			<button class="btn">Download</button>
+		</div>
+	  </div>
+	</div>
+	<!-- Scripts -->
+	<script src="js/controllers.js"></script>
+	<script src="js/dekuPolaroid.js"></script>
+</body>
+</html>
