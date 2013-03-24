@@ -2,7 +2,7 @@ var foto = {};
 $(document).ready(function() {
 	var config = {
 		'dim.width' : 300, 
-		'picture' : '../pic.jpg',
+		'picture' : 'pic.jpg',
 		'callback' : function(){foto.setText($('#labelText').val())}
 	};
 	foto = new dekuwebsPolaroid('canvas-container', config);
