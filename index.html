@@ -47,8 +47,8 @@
 				</div>
 				<p>Picture size:</p>				
 					<div class="btn-group">
-						<a class="btn" href="#"><i class="icon-minus"></i></a>
-						<a class="btn" href="#"><i class="icon-plus"></i></a>
+						<button type="button" class="btn" onclick="dekuPolaroid.setPictureScale(0.9)"><i class="icon-minus"></i></button>
+						<button type="button" class="btn" onclick="dekuPolaroid.setPictureScale(1.1)"><i class="icon-plus"></i></button>
 					</div>
 				</dl>
 				<div class="form-actions">
@@ -70,5 +70,9 @@
 	<!-- Scripts -->
 	<script src="js/controllers.js"></script>
 	<script src="js/dekuPolaroid.js"></script>
+	<script>
+		dekuPolaroid.create({picture:'../pic.jpg'});
+		
+	</script>
 </body>
 </html>
