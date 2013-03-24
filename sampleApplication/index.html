@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Polaroid Effect</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <style>
+		.shadowed {
+			-webkit-box-shadow:  0px 0px 10px 0px #000000;        
+			box-shadow:  0px 0px 10px 0px #000000;
+		}
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!-- Load the libraries -->
+  <script src="lib/kinectjs/kinetic-v4.3.3.min.js"></script>
+  <script src="lib/dekuwebs/dekuPolaroid.js"></script>
+  <script src="lib/jquery/jquery-1.9.1.min.js"></script>
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="lib/bootstrap/bootstrap.file-input.js"></script>
+</head>
+<body>
+	<div class="navbar">
+	  <div class="navbar-inner">
+		<a class="brand" href="#">Polaroid Effect</a>
+		<ul class="nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="http://www.dekuwebs.com">Dekuwebs</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div class="hero-unit">
+	  <h1>Polaroid Effect <small>from Dekuwebs</small></h1>
+	  <p>HTML5 App for applying the "Polaroid" effect to your pictures</p>
+	  <p>
+		<a class="btn btn-primary btn-large" target="_blank" href="https://github.com/bommox/polaroid">
+		  GitHub
+		</a>
+	  </p>
+	</div>
+	<div class="container-fluid">
+	  <div class="row-fluid">
+		<div class="span4">
+			<h2>Settings...</h2>
+			<div class="well well-large">
+				<p><span class="badge badge-info">1</span> Select a picture:</p>
+				<form id="form1" runat="server">
+					<input type='file'  id="inputFile"/>
+				</form>
+				<p><span class="badge badge-info">2</span> Scale the picture:</p>				
+					<div class="btn-group">
+						<button type="button" class="btn" id="scaleMinus"><i class="icon-minus"></i></button>
+						<button type="button" class="btn" id="scalePlus"><i class="icon-plus"></i></button>
+					</div>
+				<p></p>
+				<p><span class="badge badge-info">3</span> Move the picture:</p>
+					<p>Don't know how? <i class="icon-move" id="popover"></i></p>
+				<p></p>
+				<p><span class="badge badge-info">4</span> Add some text:</p>
+				<textarea rows="3" id="labelText">Your lovely picture!</textarea>
+				<button id="labelBtn" class="btn"><i class="icon-edit"></i> Edit</button>
+				<hr/>
+				<button type="button" id="prepareDownload" class="btn btn-primary" data-loading-text="Loading..."><i class="icon-download"></i> Generate</button>
+				<a id="downloadLink" class="btn btn-success btn-large" target="_blank" href="" style="display:none"><i class="icon-thumbs-up"></i> Image is ready!</a>
+				<button id="reset" class="btn"><i class="icon-trash"></i> Reset</button>
+			</div>
+		</div>
+		<div class="span8">
+			<h2>Upload your picture <small>and polaroid it!</small></h2>
+			<div class="well well-large well-inverse">
+				<div id="canvas-container"></div>
+				<p></p>
+				<div class="alert alert-info">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					 <h4>Beta version</h4>
+					 This app is being developed at the moment to get some improvements.</br>
+					 Please let me know any suggestion through the gitHub site!
+					 <br/>Thanks!
+				</div>			
+			</div>			
+		</div>
+	  </div>
+	</div>
+	<!-- Scripts -->	
+	<script src="js/myApp.js"></script>
+</body>
+</html>
